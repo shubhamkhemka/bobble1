@@ -8,6 +8,7 @@
     <title>Document</title>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="assets/style.css">
         <meta name="google-signin-client_id" content="880966960369-erkmntph4d01jvos65dqfokt7rl28vuq.apps.googleusercontent.com">
         <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -24,7 +25,7 @@
         <div class="divider1">
            
           </div>
-        <form action="#" id="login-form">
+       <div id="login-form">
             <div class="centre sign">SIGN UP</div>
             <div class="head">Create Your Account</div>
             <div class="centre">Lorem ipsum dolor sit amet, consectetur adipisicing elit</div>
@@ -40,18 +41,18 @@
                       </li>
                       <li  >
  
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();" > 
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();" >  -->
     
     
 
                         
-                         <div id="status"> 
-                        </div>
-                    <a href="" class="facebook">
+                         <!-- <div id="status"> 
+                        </div> -->
+                    <a href="https://www.facebook.com/" class="facebook">
                        <div> <img src="/assets/pics/fb.png" alt=""></div>
                         <div class="centre1">  Sign up with Facebook</div>
                 </a>
-            </fb:login-button>
+            <!-- </fb:login-button> -->
                 </li>
                
               </ul>
@@ -67,19 +68,22 @@
                 <label for="LastName"></label>
                 <input type="text" name="LastName" placeholder= "Last Name" required="text" />
               <label for="email"></label>
-              <input type="email" name="email" placeholder="Email Address" required="email" />
+              <input id="email"type="email" name="email" placeholder="Email Address" required="email" />
               <label for="password"></label> 
-              <input type="password" name="password" placeholder="Password" required/>
+              <input id="password" type="password" name="password" placeholder="Password" required ><i class="far fa-eye" id="togglePassword"></i></input>
+              
               <p class="text-p">By clicking Sign Up,you agree to our <a href="">Terms of Use</a>and our  <a href="#">Privacy policy</a></p>
-              <input type="submit" value="SIGN UP" />
+              <input id="submit" type="submit" value="SIGN UP" />
             
             </div>
-        </form>
+          </div>
     </div>
     <div class="bottom">
         
     </div>
     <script>startApp();</script>
+    <script src="/form.js"></script>
+    <script src="/app.js"></script>
     
 </body>
 </html>
